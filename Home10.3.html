@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10.3D</title>
+    <link rel="shortcut icon" href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\Images\der.jpeg" type="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\Images\der.jpeg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="C:\Users\neelp\Downloads\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="C:\Users\neelp\Downloads\script.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top" style="background-color: darkslateblue;">
+            <div class="container">
+                <a class="navbar-brand" href="https://www.linkedin.com/in/parthik-patel-830865291/">Oven Stories</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\task5.3.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\aboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\menu.html">Menu</a></li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <div data-aos-delay="200"><a href="C:\Users\neelp\Downloads\node_server_template\node_server_template\public_html\contactUs.html" class="btn btn-brand">Contact Me</a></div>
+                        </li>
+                        <li class="nav-item follow">
+                            <h5>Follow Us</h5>
+                        </li>
+                        <li class="nav-item"><a href="https://www.instagram.com/" class="social-icon"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="nav-item"><a href="https://www.facebook.com/" class="social-icon"><i class="ri-facebook-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="row">
+                <div class="col-12" data-aos-delay="100">
+                    <div class="div-title text-center">
+                        <br><br><br>
+                        <div class="mt-4"></div>
+                        <h1>Contact Us</h1>
+                        <br>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <section id="contact" class="div-padding div-connector bg-light">
+                    <div class="container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-between">
+                                    <div class="address col-md-4">
+                                        <div class="featured-title">
+                                            <h4>Location</h4>
+                                            <p>267, Auburn Road, Hawthorn VIC 3122</p>
+                                        </div>
+                                    </div>
+                                    <div class="address col-md-4">
+                                        <div class="featured-title">
+                                            <h4>Call Us</h4>
+                                            <p>(+61) 3 9191 1860</p>
+                                        </div>
+                                    </div>
+                                    <div class="address col-md-4">
+                                        <div class="featured-title">
+                                            <h4>Email Us</h4>
+                                            <p>ovenstories@outlook.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" data-aos-delay="100">
+                                <div class="div-title text-center">
+                                    <h1>Contact</h1>
+                                    <h2 class="title">Write Us A Message</h2>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8" data-aos-delay="200">
+                                <form action="http://localhost:3003/contact" method="POST" class="row g-3" onsubmit="return validateForm()">
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                        <span id="nameError" class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                                        <span id="phoneError" class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+                                        <span id="emailError" class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                                        <span id="subjectError" class="error"></span>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter Your Message" rows="4"></textarea>
+                                        <span id="messageError" class="error"></span>
+                                    </div>
+                                    <div class="form-group text-center col-md-12">
+                                        <button class="btn btn-brand">Send Message</button>
+                                        <br><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer class="bg-dark text-white">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-md-4">
+                        <h4><a href="#" class="text-white">Oven Stories</a></h4>
+                        <p>We believe that great quality bakery products are available with the love and warmth of baking and if you are looking for a perfect high on devouring some desserts and freshly baked items with the best of ingredients then we would love to offer you a treat!</p>
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item"><a class="social-icon" href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a></li>
+                            <li class="nav-item"><a class="social-icon" href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ms-auto">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="C:\Users\R.Parsad\Desktop\sit774\node_server_template\public_html\index5.3.html">Home</a></li>
+                            <li><a href="C:\Users\R.Parsad\Desktop\sit774\node_server_template\public_html\about5.3.html">About Us</a></li>
+                            <li><a href="C:\Users\R.Parsad\Desktop\sit774\node_server_template\public_html\product5.3.html">Gallery</a></li>
+                            <li><a href="C:\Users\R.Parsad\Desktop\sit774\node_server_template\public_html\Menu7.4.html">Menu</a></li>
+                            <li><a href="C:\Users\R.Parsad\Desktop\sit774\node_server_template\public_html\contact5.3.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>Email: oven.stories@gmail.com</li>
+                            <li>Phone: (+1-325-241-3652)</li>
+                            <li>Address: Melbourne,<br> VIC, Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Powered <i class="ri-heart-fill"></i> By <a href="https://github.com/Parthik04" target="_blank">Siddharth Yadav</a></p>
+                        <p>Copyright © 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
